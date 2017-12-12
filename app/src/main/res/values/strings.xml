@@ -1,0 +1,12 @@
+<resources>
+    <string name="api_key">16acbd183aac4a4bb2f860de55d40e2e</string>
+    <string name="nyt_base_url">https://api.nytimes.com/svc/movies/v2/</string>
+    <string name="app_name">MovieMagic</string>
+    <string name="title_top_movies">Top Movies</string>
+    <string name="title_search">Search</string>
+    <string name="title_favourite">Favourite</string>
+    <string name="about_movie_toolbar_title">Movie Detail</string>
+    <string name="top_movie_toolbar_title">Top Movies</string>
+    <string name="fav_movie_toobar_title">Favourite Movies</string>
+    <string name="database_name">user.db</string>
+</resources>

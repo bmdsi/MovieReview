@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Movie title" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/fav_animation_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="match_parent"
+            app:lottie_fileName="favourite_app_icon.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="false" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/movie_image"
+                android:layout_width="210dp"
+                android:layout_height="140dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/title_top_movies"
+                tools:src="@drawable/ic_dashboard_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/movie_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movie_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/title_text_size"
+                    tools:text="Movie headline" />
+
+                <TextView
+                    android:id="@+id/movie_opening_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/title_text_size"
+                    tools:text="12/12/2017" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/movie_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:textSize="@dimen/title_text_size"
+            tools:text="This is a very large summary to see if we can wrap the " />
+
+
+    </LinearLayout>
+</ScrollView>
